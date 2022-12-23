@@ -1,0 +1,11 @@
+{% extends "cookie_layout.html" %}
+
+{% block z %}
+
+{% if name %}
+You are Register {{ name }} <a href="/logout">Logout</a>
+{% else %}
+You are not Register. <a href="/login">Login</a>
+{% endif %}
+
+{% endblock %}
